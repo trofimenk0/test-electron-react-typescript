@@ -10,7 +10,7 @@ const TemplateDefault = ({ children }: TemplateDefaultProps) => {
   return (
     <div className={styles.templateDefault}>
       <Sidebar />
-      {children}
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };
