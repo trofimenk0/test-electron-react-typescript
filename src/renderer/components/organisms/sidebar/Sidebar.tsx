@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <NavLink to="/">
-        <Image height="auto" src={Logo} width="100%" />
+        <Image className="logo" src={Logo} />
       </NavLink>
       <Menu />
     </aside>
