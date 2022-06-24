@@ -1,8 +1,13 @@
 import React from 'react';
+import WidgetTotals from 'renderer/components/organisms/widgetTotals/WidgetTotals';
 import styles from './PageHome.module.scss';
 
 const PageHome = () => {
-  return <div className={styles.pageHome}>Home page</div>;
+  return (
+    <>
+      <WidgetTotals />
+    </>
+  );
 };
 
 export default PageHome;
