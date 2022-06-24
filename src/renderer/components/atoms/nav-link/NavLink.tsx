@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './NavLink.module.scss';
 
-interface LinkProps {
+type LinkProps = {
   children?: React.ReactNode | string;
   className?: string;
   to: string;
-}
+};
 
 const NavLink = ({ children, className, to }: LinkProps) => {
   return (

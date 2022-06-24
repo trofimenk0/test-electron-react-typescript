@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './H5.module.scss';
 
-interface H5Props {
+type H5Props = {
   children: React.ReactNode | string;
   className?: string;
-}
+};
 
 const H5 = ({ children, className }: H5Props) => {
   return <h5 className={styles[className || 'title']}>{children}</h5>;
