@@ -13,27 +13,27 @@ import IconInvoices from '../../../assets/icons/IconInvoices.svg';
 const Menu = () => {
   return (
     <nav className={styles.menu}>
-      <NavLink to="/">
+      <NavLink to="/" className="menuLink">
         <Image src={IconHome} className="menuLinkIcon" />
         Dashboard
       </NavLink>
-      <NavLink to="/clients">
+      <NavLink to="/clients" className="menuLink">
         <Image src={IconClients} className="menuLinkIcon" />
         Clients
       </NavLink>
-      <NavLink to="/teachers">
+      <NavLink to="/teachers" className="menuLink">
         <Image src={IconTeachers} className="menuLinkIcon" />
         Teachers
       </NavLink>
-      <NavLink to="/courses">
+      <NavLink to="/courses" className="menuLink">
         <Image src={IconCourses} className="menuLinkIcon" />
         Courses
       </NavLink>
-      <NavLink to="/payments">
+      <NavLink to="/payments" className="menuLink">
         <Image src={IconPayments} className="menuLinkIcon" />
         Payments
       </NavLink>
-      <NavLink to="/invoices">
+      <NavLink to="/invoices" className="menuLink">
         <Image src={IconInvoices} className="menuLinkIcon" />
         Invoices
       </NavLink>

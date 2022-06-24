@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import styles from './NavLink.module.scss';
 
 interface LinkProps {
-  to: string;
   children?: React.ReactNode | string;
+  className?: string;
+  to: string;
 }
 
-const NavLink = ({ to, children }: LinkProps) => {
+const NavLink = ({ children, className, to }: LinkProps) => {
   return (
-    <Link to={to} className={styles.link}>
+    <Link to={to} className={styles[className || 'link']}>
       {children}
     </Link>
   );
@@ -17,6 +18,7 @@ const NavLink = ({ to, children }: LinkProps) => {
 
 NavLink.defaultProps = {
   children: 'Link',
+  className: 'link',
 };
 
 export default NavLink;
