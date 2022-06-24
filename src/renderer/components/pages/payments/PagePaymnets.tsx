@@ -5,7 +5,7 @@ import styles from './PagePaymnets.module.scss';
 const PagePaymnets = () => {
   return (
     <div className={styles.PagePaymnets}>
-      <TemplateDefault>Teachers page</TemplateDefault>
+      <TemplateDefault>Payments page</TemplateDefault>
     </div>
   );
 };

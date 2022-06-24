@@ -5,7 +5,7 @@ import styles from './PageCourses.module.scss';
 const PageCourses = () => {
   return (
     <div className={styles.PageCourses}>
-      <TemplateDefault>Teachers page</TemplateDefault>
+      <TemplateDefault>Courses page</TemplateDefault>
     </div>
   );
 };
