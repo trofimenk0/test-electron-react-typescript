@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from 'renderer/components/organisms/sidebar/Sidebar';
 import styles from './TemplateDefault.module.scss';
 
 interface TemplateDefaultProps {
@@ -7,12 +6,7 @@ interface TemplateDefaultProps {
 }
 
 const TemplateDefault = ({ children }: TemplateDefaultProps) => {
-  return (
-    <div className={styles.templateDefault}>
-      <Sidebar />
-      <div className={styles.content}>{children}</div>
-    </div>
-  );
+  return <div className={styles.templateDefault}>{children}</div>;
 };
 
 export default TemplateDefault;
