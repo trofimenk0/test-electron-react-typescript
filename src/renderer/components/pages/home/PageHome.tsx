@@ -4,9 +4,9 @@ import styles from './PageHome.module.scss';
 
 const PageHome = () => {
   return (
-    <>
+    <div className={styles.pageHome}>
       <WidgetTotals />
-    </>
+    </div>
   );
 };
 
