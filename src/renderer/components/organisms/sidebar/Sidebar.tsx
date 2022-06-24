@@ -1,11 +1,11 @@
 import React from 'react';
+import Image from 'renderer/components/atoms/image/Image';
 import styles from './Sidebar.module.scss';
 
 const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
-      This is Sidebar!
-      <div>This is child component DIV</div>
+      <Image height="100px" />
     </aside>
   );
 };
