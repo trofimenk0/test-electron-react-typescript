@@ -1,33 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Menu.module.scss';
 
 const Menu = () => {
   return (
     <nav className={styles.menu}>
-      <a href="/" className="link">
+      <Link to="/clients" className="link">
         Clients
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Teachers
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Courses
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Payments
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Invoices
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Reports
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Import / Export
-      </a>
-      <a href="/" className="link">
+      </Link>
+      <Link to="/" className="link">
         Settings
-      </a>
+      </Link>
     </nav>
   );
 };
