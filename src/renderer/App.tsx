@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import PageHome from './components/pages/home/PageHome';
@@ -11,14 +11,16 @@ import PageInvoices from './components/pages/invoices/PageInvoices';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<PageHome />} />
-      <Route path="/clients" element={<PageClients />} />
-      <Route path="/teachers" element={<PageTeachers />} />
-      <Route path="/courses" element={<PageCourses />} />
-      <Route path="/payments" element={<PagePaymnets />} />
-      <Route path="/invoices" element={<PageInvoices />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<PageHome />} />
+        <Route path="/clients" element={<PageClients />} />
+        <Route path="/teachers" element={<PageTeachers />} />
+        <Route path="/courses" element={<PageCourses />} />
+        <Route path="/payments" element={<PagePaymnets />} />
+        <Route path="/invoices" element={<PageInvoices />} />
+      </Routes>
+    </Router>
   );
 };
 
