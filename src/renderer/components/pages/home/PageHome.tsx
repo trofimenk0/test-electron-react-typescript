@@ -2,12 +2,12 @@ import React from 'react';
 import TemplateDefault from 'renderer/components/templates/default/TemplateDefault';
 import styles from './PageHome.module.scss';
 
-const Home = () => {
+const PageHome = () => {
   return (
     <div className={styles.pageHome}>
-      <TemplateDefault>Hello!</TemplateDefault>
+      <TemplateDefault>Home page</TemplateDefault>
     </div>
   );
 };
 
-export default Home;
+export default PageHome;
