@@ -7,7 +7,7 @@ interface H5Props {
 }
 
 const H5 = ({ children, className }: H5Props) => {
-  return <h5 className={className}>{children}</h5>;
+  return <h5 className={styles[className || 'title']}>{children}</h5>;
 };
 
 H5.defaultProps = {
