@@ -3,13 +3,14 @@ import styles from './Image.module.scss';
 
 interface ImageProps {
   height?: string;
+  src: string;
   width?: string;
 }
 
-const Image = ({ height, width }: ImageProps) => {
+const Image = ({ height, src, width }: ImageProps) => {
   return (
     <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+      src={src}
       alt="Logo"
       className={styles.image}
       style={{ height, width }}
