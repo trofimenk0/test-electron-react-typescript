@@ -1,7 +1,15 @@
 .sidebar {
+  align-items: flex-start;
+  align-content: flex-start;
   background-color: #fff;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0px 0px 100px rgba(39, 39, 39, 0.1);
   color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: flex-start;
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px;
   width: 300px;
 }
